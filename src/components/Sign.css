@@ -1,0 +1,78 @@
+/* Контейнер на весь екран */
+.sign-page {
+  display: flex;
+  height: 100vh;           
+  width: 100vw;           
+  overflow: hidden;        
+}
+
+/* Ліва секція з картинкою */
+.image-section {
+  flex: 1; /* 50% */
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+/* Права секція з формою */
+.form-section {
+  flex: 1; /* 50% */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* по центру вертикалі */
+  padding: 60px;
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.form-section h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.form-section p {
+  font-size: 14px;
+  color: #b0b0b0;
+  margin-bottom: 30px;
+}
+
+.ant-input, .ant-input-password {
+  border-radius: 8px;
+  height: 42px;
+}
+
+.submit-btn {
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
+  background-color: #8a4fff;
+  border: none;
+}
+
+.form-info .ant-form-item-label > label {
+    color: #fff;
+    font-family: Work Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+}
+
+.form-section h1 {
+    font-family: Work Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 51px;
+    line-height: 110.00000000000001%;
+    vertical-align: middle;
+}
+.form-section p {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 22px;
+    line-height: 160%;
+    letter-spacing: 0%;
+}
