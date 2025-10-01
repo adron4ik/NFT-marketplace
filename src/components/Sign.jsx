@@ -1,13 +1,23 @@
 
 import './Sign.css'
-import React from 'react';
 import Imageplaceholder from '../assets/Image Placeholder.png'
-import { Button, Checkbox, Form, Input } from 'antd';
-const Sign = () => {
+import { Button, Form, Input } from 'antd'
+import { useNavigate } from 'react-router-dom';
+
+
+const Sign = ({ onSign }) => {
+    
+    const [form] = Form.useForm();
+    const navigate = useNavigate()
+
 
     const onFinish = values => {
         console.log('Success:', values);
-        };
+        localStorage.setItem('userData', JSON.stringify(values));
+        form.resetFields();
+        onSign?.();
+        navigate('/marketplace');
+    };
         const onFinishFailed = errorInfo => {
         console.log('Failed:', errorInfo);
     };
@@ -22,6 +32,7 @@ const Sign = () => {
                     <p>Welcome! Enter Your Details And Start Creating, Collecting And Selling NFTs.</p>
                     
                     <Form
+                        form={form}
                         name="basic"
                         layout="vertical"
                         onFinish={onFinish}

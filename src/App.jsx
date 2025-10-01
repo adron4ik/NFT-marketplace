@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Route, BrowserRouter as Router, Routes, Link } from "react-router";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import Storefront from "./assets/Storefront.svg"
 import User from "./assets/User.svg"
@@ -15,6 +15,8 @@ import Sign from './components/Sign';
 
 function App() {
 
+const [isSigned, setIsSigned] = useState(false);
+
   return (
     <Router>
       <div className='navigation-wrap'>
@@ -23,19 +25,23 @@ function App() {
                 <img src={Storefront} />
                 <h1>NFT Marketplace</h1>
               </div>
-              <nav>
-                <Link to="/Marketplace">Marketplace</Link>
-                <Link to="/Rankings">Rankings</Link>
-                <Link to="/Connect">Connect</Link>
-                <Link to="/Sign" className='btn-sign'><img src={User}/>Sign</Link>
-              </nav>
+               <nav>
+                  <Link to="/marketplace">Marketplace</Link>
+                  <Link to="/rankings">Rankings</Link>
+                  <Link to="/connect">Connect</Link>
+                  {!isSigned && (
+                    <Link to="/sign" className='btn-sign'>
+                      <img src={User} />Sign
+                    </Link>
+                  )}
+                </nav>
           </header>
       </div>
         <Routes>
               <Route path='/marketplace' element={<Marketplace/>}></Route>
               <Route path='/Rankings' element={<Rankings/>}></Route>
               <Route path='/Connect' element={<Connect/>}></Route>
-              <Route path='/Sign' element={<Sign/>}></Route>
+              <Route path='/sign' element={<Sign onSign={() => setIsSigned(true)} />} />
         </Routes>
         <footer>
           <div>

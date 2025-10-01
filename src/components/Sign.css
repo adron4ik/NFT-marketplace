@@ -1,4 +1,4 @@
-/* Контейнер на весь екран */
+
 .sign-page {
   display: flex;
   height: 100vh;           
@@ -6,9 +6,9 @@
   overflow: hidden;        
 }
 
-/* Ліва секція з картинкою */
+
 .image-section {
-  flex: 1; /* 50% */
+  flex: 1; 
 }
 
 .image-section img {
@@ -17,12 +17,12 @@
   object-fit: cover; 
 }
 
-/* Права секція з формою */
+
 .form-section {
-  flex: 1; /* 50% */
+  flex: 1; 
   display: flex;
   flex-direction: column;
-  justify-content: center; /* по центру вертикалі */
+  justify-content: center; 
   padding: 60px;
   background-color: #1f1f1f;
   color: #ffffff;
