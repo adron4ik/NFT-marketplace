@@ -1,0 +1,195 @@
+.wrap {
+    background-color: #2B2B2B;
+}
+
+.welcome-sec-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 115px;
+    background-color: #2B2B2B;
+    
+}
+.to-user-info {
+    width: 510px;
+}
+.to-user-info h1 {
+    font-family: Work Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 67px;
+    color: #FFFFFF;
+    line-height: 110.00000000000001%;
+}
+.to-user-info p {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 22px;
+    line-height: 160%;
+    color: #FFFFFF;
+    padding-top: 10px;
+}
+.to-user-info button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; 
+  padding: 10px 20px;
+  background: #A259FF;
+  color: #fff;
+  font-family: Work Sans;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 16px;
+  border-radius: 20px;
+  text-decoration: none; 
+  transition: 0.3s;
+  margin-top: 20px;
+}
+.to-user-info button:hover {
+  background: #b67aff;   
+  transform: scale(1.05); 
+}
+.statistic-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.statistic-info div h2 {
+    font-family: Space Mono;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 28px;
+    line-height: 140%;
+    color: white;
+}
+.statistic-info div p {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 23.99px;
+    line-height: 160%;
+}
+
+.welcome-img {
+    background-color: #3B3B3B;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.welcome-img:hover {
+    background: #b67aff;   
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.welcome-img h1 {
+    font-family: Work Sans;
+    font-weight: 500;
+    font-style: SemiBold;
+    font-size: 22px;
+    line-height: 140%;
+    color: #FFFFFF;
+    padding: 20px 20px 0 20px;
+}
+.welcome-img p {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 140%;
+    padding: 10px 20px 0 20px;
+    color: #FFFFFF;
+}
+
+.fav-trends {
+    margin: 117px;
+
+}
+.fav-trends h1 {
+    font-family: Work Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 38px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+.fav-trends p {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 22px;
+    line-height: 160%;
+    color: #FFFFFF;
+    margin-bottom: 60px ;
+}
+.ilustration {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.boxes div {
+    background-color:#A259FF ;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.boxes div h1 {
+    font-family: Space Mono;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 22px;
+    line-height: 160%;
+}
+.author h1 {
+    font-family: Work Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 22px;
+    line-height: 140%;
+}
+.author p {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 140%;
+    
+}
+.ilust {
+    transition: all 0.3s ease;
+}
+.ilust:hover {
+    transform: scale(0.9);
+}
+.rank-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.get-rank-page button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; 
+    padding: 10px 20px;
+    background: #A259FF;
+    color: #fff;
+    font-family: Work Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    border-radius: 20px;
+    text-decoration: none; 
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.get-rank-page button:hover {
+  background: #b67aff;   
+  transform: scale(1.05); 
+}
